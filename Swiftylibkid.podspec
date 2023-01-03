@@ -1,8 +1,8 @@
 #
-#  Be sure to run `pod spec lint SwiftyLib.podspec' to ensure this is a
+#  Be sure to run `pod spec lint Swiftylib.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about Podspec attributes see https://docs.cocoapods.org/specification.html
+#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "SwiftyLib"
+  spec.name         = "Swiftylibkid"
   spec.version      = "0.0.1"
-  spec.summary      = "A CocoaPods library written in Swift"
+  spec.summary      = "A short description of Swiftylib."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-This CocoaPods library helps you perform calculation.
+one who makes other happy
                    DESC
 
-  spec.homepage     = "https://github.com/jeantimex/SwiftyLib"
+  spec.homepage     = "https://github.com/pavanbideyalabs/SwiftyLib.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,8 +39,8 @@ This CocoaPods library helps you perform calculation.
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = "MIT (pavan)"
+  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,10 +53,10 @@ This CocoaPods library helps you perform calculation.
   #  profile URL.
   #
 
-  spec.author             = { "jeantimex" => "jean.timex@gmail.com" }
-  # Or just: spec.author    = "jeantimex"
-  # spec.authors            = { "jeantimex" => "jean.timex@gmail.com" }
-  # spec.social_media_url   = "https://twitter.com/jeantimex"
+  spec.author             = { "pavan" => "pavanb46.rider@gmail.com" }
+  # Or just: spec.author    = ""
+  # spec.authors            = { "" => "" }
+  # spec.social_media_url   = "https://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -68,12 +68,10 @@ This CocoaPods library helps you perform calculation.
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "12.1"
+  # spec.ios.deployment_target = "5.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
-  spec.swift_version = "4.2"
+   spec.tvos.deployment_target = "9.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,7 +80,7 @@ This CocoaPods library helps you perform calculation.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/jeantimex/SwiftyLib.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/pavanbideyalabs/SwiftyLib.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,7 +92,7 @@ This CocoaPods library helps you perform calculation.
   #
 
   spec.source_files  = "SwiftyLib/**/*.{h,m,swift}"
-  # spec.exclude_files = "Classes/Exclude"
+  spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -132,7 +130,7 @@ This CocoaPods library helps you perform calculation.
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
